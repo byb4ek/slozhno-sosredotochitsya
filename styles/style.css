@@ -323,16 +323,42 @@ button:focus-visible {
   .card__4 {
     display: block;
   }
-	
-	.card__4 .information__subtitle{
-		margin-bottom: 20px;
-	}
 
-	.gallery{
-		display: grid;
-		grid-template-columns: repeat(3,1fr);
-		grid
-	}
+  .card__4 .information__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 228px 232px 228px;
+    grid-template-rows: 191px 230px 318px;
+    gap: 20px 20px;
+    grid-template-areas:
+      "sunset sunset ice-cream"
+      "cassette book ice-cream"
+      "cassette street street";
+    margin-bottom: 60px;
+  }
+
+  .gallery__img:nth-child(1) {
+    grid-area: sunset;
+  }
+  .gallery__img:nth-child(2) {
+    grid-area: ice-cream;
+  }
+  .gallery__img:nth-child(3) {
+    grid-area: cassette;
+  }
+  .gallery__img:nth-child(4) {
+    grid-area: book;
+  }
+  .gallery__img:nth-child(5) {
+    grid-area: street;
+  }
+
+  .footer {
+    min-height: 1024px;
+  }
 }
 
 @media (min-width: 1024px) {
