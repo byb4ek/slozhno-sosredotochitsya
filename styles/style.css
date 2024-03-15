@@ -53,7 +53,7 @@ button:focus-visible {
   display: grid;
   position: relative;
   justify-content: end;
-  padding-right: 18px;
+  /*   padding-right: 18px; */
 }
 
 .header__lamp-text {
@@ -282,12 +282,13 @@ button:focus-visible {
     left: 20px;
   }
 
-  /* 	.header__text-title{
-		display: flex;
-    flex-direction: column;
-    justify-self: start;
-    width: 80%;  не работает
-	} */
+  .header__text-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .footer__text-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 
   .header__main-text {
     display: flex;
@@ -362,6 +363,92 @@ button:focus-visible {
 }
 
 @media (min-width: 1024px) {
-  .block {
+  .page {
+    inline-size: 1024px;
+  }
+
+  .header {
+    grid-template-rows:
+      0
+      min(100%, calc(130px + 167px))
+      min(100%, calc(71px + 171px));
+    padding: 20px;
+    min-height: 768px;
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+  }
+
+  .header__lamp-text::after {
+    top: -3px;
+    right: 29px;
+  }
+
+  .header__lamp-text::before {
+    top: 8px;
+    right: 9px;
+  }
+
+  .header__text-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .decorated-zone::after {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::before {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .header__main-text {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    width: 50%;
+  }
+
+  .content {
+    grid-row-gap: 80px;
+    padding: 55px 20px 0 20px;
+  }
+
+  .information {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 10px;
+  }
+
+  .card__2 .infomation__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .information__title {
+    max-width: 315px;
+  }
+
+  .card__4 {
+    display: block;
+  }
+
+  .card__4 .information__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    grid-template-columns: 315px 315px 314px;
+    grid-template-rows: 261px 315px 434px;
+  }
+
+  .footer {
+    min-height: 768px;
   }
 }
