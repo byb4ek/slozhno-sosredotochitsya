@@ -31,8 +31,8 @@ button:focus-visible {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows:
-    min(100%, 65px)
-    min(100%, 163px)
+    min(100%, 63px)
+    min(100%, 165px)
     min(100%, 247px)
     min(100%, 183px);
   background-image: url(../images/cover-image-dark.png);
@@ -90,7 +90,7 @@ button:focus-visible {
   row-gap: 10px;
   justify-content: end;
   align-content: center;
-  padding: 0 5px 0 0;
+  padding: 0 1px 0 0;
 }
 
 .header__theme-menu-button {
@@ -99,7 +99,6 @@ button:focus-visible {
   font-size: var(--main-font-size);
   line-height: 18px;
   color: var(--main-color);
-  align-items: center;
   border: none;
   width: 70px;
   height: 26px;
@@ -139,6 +138,7 @@ button:focus-visible {
   line-height: 82.5%;
   text-align: left;
   text-shadow: 4px 4px var(--main-color);
+
 }
 
 .content {
@@ -257,6 +257,10 @@ button:focus-visible {
     padding: 20px;
     min-height: 1024px;
   }
+
+	.header__text-title{
+		margin-inline-start: -21px;
+	}
 
   .header__theme-menu-list {
     padding: 0;
@@ -416,7 +420,7 @@ button:focus-visible {
 
   .content {
     grid-row-gap: 80px;
-    padding: 55px 20px 0 20px;
+    padding: 60px 20px 0 20px;
   }
 
   .information {
