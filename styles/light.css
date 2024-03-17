@@ -3,7 +3,6 @@
   --main-text-color: #353430;
   --accent-color: #ff8dcb;
   --main-color: #fff1f7;
-  --image-body: url(../images/cover-image-light.png);
 }
 
 @media (prefers-color-scheme: light) {
