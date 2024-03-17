@@ -2,8 +2,7 @@
   inline-size: 375px;
   block-size: 100%;
   margin: 0 auto;
-  background-color: var(--main-color);
-	background-image: var(--image-body);
+	background-image: url(../images/cover-image.png);
 	background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
