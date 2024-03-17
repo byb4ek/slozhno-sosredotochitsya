@@ -1,8 +1,8 @@
 :root {
-	--title-text-color: #DB00FF;
-  --main-text-color: #F1B2CE;
-	--accent-color:#FF0070;
-  --main-color:#000028;
+	--title-text-color: #ffc2e6;
+  --main-text-color: #353430;
+  --accent-color: #ff8dcb;
+  --main-color: #fff1f7;
   --main-font: 'IBM Plex mono', 'Arial', sans-serif;
   --main-font-size: 18px;
   --main-line-height: 23.4px;
