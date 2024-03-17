@@ -6,6 +6,24 @@
 }
 
 .page.theme_dark {
+	.header__lamp-text::after {
+		content: "REC";
+		font-family: var(--main-font);
+		position: absolute;
+		right: 29px;
+	}
+	
+	 .header__lamp-text::before {
+		content: "";
+		position: absolute;
+		width: 9px;
+		height: 9px;
+		top: 8px;
+		right: 9px;
+		border-radius: 50%;
+		box-shadow: 0px 0px 4px 2px var(--accent-color);
+		background-color: var(--accent-color);
+	}
 }
 
 .header__lamp-text::after {

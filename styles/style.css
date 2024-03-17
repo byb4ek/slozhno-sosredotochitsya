@@ -3,6 +3,11 @@
   block-size: 100%;
   margin: 0 auto;
   background-color: var(--main-color);
+	background-image: var(--image-body);
+	background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+	background-attachment: fixed;
 }
 
 .header {
@@ -233,6 +238,7 @@
 
   .header__text-title {
     margin-inline-start: -21px;
+		font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__theme-menu-list {
@@ -256,10 +262,6 @@
   .decorated-zone::before {
     bottom: 20px;
     left: 20px;
-  }
-
-  .header__text-title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .footer__text-title {
