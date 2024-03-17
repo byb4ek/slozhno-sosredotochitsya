@@ -3,6 +3,7 @@
   --main-text-color: #353430;
   --accent-color: #ff8dcb;
   --main-color: #fff1f7;
+	--image-body: url(../images/cover-image-light.png);
   --main-font: 'IBM Plex mono', 'Arial', sans-serif;
   --main-font-size: 18px;
   --main-line-height: 23.4px;

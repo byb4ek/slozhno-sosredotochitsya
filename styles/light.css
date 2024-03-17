@@ -6,16 +6,6 @@
 	--image-body: url(../images/cover-image-light.png);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --title-text-color: #ffc2e6;
-    --main-text-color: #353430;
-    --accent-color: #ff8dcb;
-    --main-color: #fff1f7;
-    --image-body: url(../images/cover-image-light.png);
-  }
-}
-
 .page.theme_light {
 .header__lamp-text::after {
   content: "";
