@@ -3,6 +3,17 @@
   --main-text-color: #F1B2CE;
 	--accent-color:#FF0070;
   --main-color:#000028;
+	--image-body:url(../images/cover-image-dark.png);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+		--title-text-color: #DB00FF;
+		--main-text-color: #F1B2CE;
+		--accent-color:#FF0070;
+		--main-color:#000028;
+  	--image-body:url(../images/cover-image-dark.png);
+  }
 }
 
 .page.theme_dark {
