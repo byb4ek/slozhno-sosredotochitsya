@@ -1,21 +1,65 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-:root.theme_light{
-
+:root .theme_light {
+  --title-text-color: #ffc2e6;
+  --main-text-color: #353430;
+  --accent-color: #ff8dcb;
+  --main-color: #fff1f7;
+  --image-body: url(../images/cover-image-light.png);
 }
 
-@media (prefers-color-scheme: light)
-{
-	:root{
-		
-	}	
+@media (prefers-color-scheme: light) {
+  :root {
+    --title-text-color: #ffc2e6;
+    --main-text-color: #353430;
+    --accent-color: #ff8dcb;
+    --main-color: #fff1f7;
+    --image-body: url(../images/cover-image-light.png);
+  }
 }
+
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+}
+
+.theme_light .header__lamp-text::after {
+  content: "";
+}
+
+.theme_light .header__lamp-text::before {
+  content: "";
+	width:0;
+  box-shadow: none;
+}
+
+.theme_light .decorated-zone::after {
+  border-block-start: 1px solid var(--main-text-color);
+  border-inline-end: 1px solid var(--main-text-color);
+}
+
+.theme_light .decorated-zone::before {
+  border-inline-start: 1px solid var(--main-text-color);
+  border-block-end: 1px solid var(--main-text-color);
+}
+
+.theme_light .header__theme-menu-button {
+  color: var(--main-text-color);
+}
+
+.theme_light .title-decor {
+  color: var(--main-text-color);
+}
+
+.theme_light .information__title {
+  color: var(--main-text-color);
+}
+
+.theme_light .information__subtitle {
+  color: var(--main-text-color);
+}
+
+.theme_light .information__subtitle-list {
+  color: var(--main-text-color);
+}
+
+.theme_light .header__theme-menu-button:hover {
+  cursor: pointer;
+  outline: 1px solid rgba(50, 49, 45, 0.4);
 }
