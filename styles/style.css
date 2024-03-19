@@ -387,8 +387,8 @@
       min-content
       1fr;
     padding: 20px;
-    height: 66vh;
-    min-height: 768px;
+    height: 768px;
+    min-height: 64vh;
   }
 
   .header__theme-menu {
@@ -404,7 +404,6 @@
   }
 
   .header__text-title {
-    padding-block-end: 16px;
     font-size: var(--logo-size);
   }
 
@@ -421,7 +420,6 @@
   .header__main-text {
     display: flex;
     flex-direction: column;
-    margin-block-end: 36px;
     justify-self: end;
     width: 50%;
     align-items: end;
@@ -429,7 +427,7 @@
 
   .content {
     grid-row-gap: 80px;
-    padding: 40px 20px 0 20px;
+    padding: 60px 20px 0 20px;
   }
 
   .information {
@@ -462,7 +460,7 @@
   }
 
   .footer {
-    height: 64vh;
-    min-height: 768px;
+    min-height: 63vh;
+    height: 768px;
   }
 }
