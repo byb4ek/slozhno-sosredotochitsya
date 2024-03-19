@@ -1,56 +1,39 @@
 :root .theme_dark {
-	--title-text-color: #DB00FF;
-  --main-text-color: #F1B2CE;
-	--accent-color:#FF0070;
-  --main-color:#000028;
+	--alfa-channel: rgba(255, 0, 112, 0.4);
+  --title-text-color: #db00ff;
+  --main-text-color: #f1b2ce;
+	--decorated-zone-color: #ff0070;
+	--bg-title-color:#FF0070;
+  --accent-color: #ff0070;
+  --main-color: #000028;
+  --bg-color: #000028;
+	--inf-title-color:#ff0070;
+	--inf-subtitle-color:#000028;
+  --image-body: url(../images/cover-image-dark.png);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-		--title-text-color: #DB00FF;
-		--main-text-color: #F1B2CE;
-		--accent-color:#FF0070;
-		--main-color:#000028;
-  	--image-body:url(../images/cover-image-dark.png);
+		--alfa-channel: rgba(255, 0, 112, 0.4);
+		--title-text-color: #db00ff;
+		--main-text-color: #f1b2ce;
+		--decorated-zone-color: #ff0070;
+		--bg-title-color:#FF0070;
+		--accent-color: #ff0070;
+		--main-color: #000028;
+		--bg-color: #000028;
+		--inf-title-color:#ff0070;
+		--inf-subtitle-color:#000028;
+    --image-body: url(../images/cover-image-dark.png);
   }
 }
 
 .page.theme_dark {
-	.header__lamp-text::after {
-		content: "REC";
-		font-family: var(--main-font);
-		position: absolute;
-		right: 29px;
-	}
-	
-	 .header__lamp-text::before {
-		content: "";
-		position: absolute;
-		width: 9px;
-		height: 9px;
-		top: 8px;
-		right: 9px;
-		border-radius: 50%;
-		box-shadow: 0px 0px 4px 2px var(--accent-color);
-		background-color: var(--accent-color);
-	}
-}
+  .header__lamp-text::after {
+    content: "REC";
+  }
 
-.header__lamp-text::after {
-  content: "REC";
-  font-family: var(--main-font);
-  position: absolute;
-  right: 29px;
-}
-
- .header__lamp-text::before {
-  content: "";
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  top: 8px;
-  right: 9px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
-  background-color: var(--accent-color);
+  .header__lamp-text::before {
+    content: "";
+  }
 }
