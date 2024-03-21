@@ -5,7 +5,7 @@
   --decorated-zone-color: #353430;
   --bg-title-color: #ff8dcb;
   --accent-color: #ff0070;
-	--lamp-color:transparent;
+  --lamp-color: transparent;
   --main-color: #353430;
   --bg-color: #fff1f7;
   --inf-title-color: #353430;
@@ -13,20 +13,19 @@
   --image-body: url(../images/cover-image-light.png);
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
-		--alfa-channel: rgba(50, 49, 45, 0.4);
-		--title-text-color: #ffc2e6;
-		--main-text-color: #353430;
-		--decorated-zone-color: #353430;
-		--bg-title-color: #ff8dcb;
-		--accent-color: #ff0070;
-		--main-color: #353430;
-		--bg-color: #fff1f7;
-		--lamp-color:transparent;
-		--inf-title-color: #353430;
-		--inf-subtitle-color: #353430;
-		--image-body: url(../images/cover-image-light.png);
+    --alfa-channel: rgba(50, 49, 45, 0.4);
+    --title-text-color: #ffc2e6;
+    --main-text-color: #353430;
+    --decorated-zone-color: #353430;
+    --bg-title-color: #ff8dcb;
+    --accent-color: #ff0070;
+    --main-color: #353430;
+    --bg-color: #fff1f7;
+    --lamp-color: transparent;
+    --inf-title-color: #353430;
+    --inf-subtitle-color: #353430;
+    --image-body: url(../images/cover-image-light.png);
   }
 }
