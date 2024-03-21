@@ -35,7 +35,7 @@
 
 .header__lamp-text {
   position: absolute;
-  color: var(--accent-color);
+  color: var(--lamp-color);
   font-family: var(--main-font);
   font-size: var(--main-font-size);
   top: 10px;
@@ -61,8 +61,8 @@
   top: 8px;
   right: -18px;
   border-radius: 50%;
-  box-shadow: 0px 0px 4px 2px var(--accent-color);
-  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--lamp-color);
+  background-color: var(--lamp-color);
 }
 
 .decorated-zone::after {
